@@ -21,3 +21,24 @@ nav {
     width: 5%;
     margin-right: auto;
 }
+#mainPage {
+    text-align: center;
+}
+#projectsPage {
+    display: none;
+    text-align: center;
+}
+#projectsPage a {
+    color: rgb(75, 117, 255);
+}
+#socialsPage {
+    text-align: center;
+    display: none;
+}
+#socialsPage a {
+    color: white;
+}
+#sitesPage {
+    text-align: center;
+    display: none;
+}
