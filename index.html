@@ -14,7 +14,12 @@
 <body>
     <div id="main">
         <nav>
-            <img id="logo" src="logo.png"> <a>home</a> <a>projects</a> <a>socials</a> <a>sites</a> <a>blog</a>
+            <img id="logo" src="logo.png"> 
+            <a onclick="mainPage()">home</a> 
+            <a onclick="projectsPage()">projects</a> 
+            <a onclick="socialsPage()">socials</a> 
+            <a onclick="sitesPage()">sites</a> 
+            <a href="https://fgclue.wordpress.com/">blog</a>
         </nav>
         <content>
             <div id="mainPage">
@@ -47,5 +52,43 @@
             </div>
         </content>
     </div>
+
+    <script>
+        // Website Tab Handler
+        // Define divs
+        var mnPage = document.getElementById("mainPage");
+        var prPage = document.getElementById("projectsPage");
+        var soPage = document.getElementById("socialsPage");
+        var stPage = document.getElementById("sitesPage");
+
+        // Main Page
+        function mainPage() {
+            mnPage.style.display = "block";
+            prPage.style.display = "none";
+            soPage.style.display = "none";
+            stPage.style.display = "none";
+        }
+
+        function projectsPage() {
+            mnPage.style.display = "none";
+            prPage.style.display = "block";
+            soPage.style.display = "none";
+            stPage.style.display = "none";
+        }
+        
+        function socialsPage() {
+            mnPage.style.display = "none";
+            prPage.style.display = "none";
+            soPage.style.display = "block";
+            stPage.style.display = "none";
+        }
+
+        function sitesPage() {
+            mnPage.style.display = "none";
+            prPage.style.display = "none";
+            soPage.style.display = "none";
+            stPage.style.display = "block";
+        }
+    </script>
 </body>
 </html>
