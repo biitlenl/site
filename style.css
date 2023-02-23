@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+nav a {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    align-items: center;
+}
+#logo{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    width: 5%;
+    margin-right: auto;
+}
