@@ -8,7 +8,6 @@ nav a {
     font-weight: 400;
     font-size: 200%;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -47,4 +46,33 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width:400px) {
+    nav a {
+        font-size: 100%;
+    }
+}
+
+@media (max-width:280px) {
+    nav a {
+        font-size: 70%;
+    }
+}
+@media (max-width:210px) {
+    nav a {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:155px) {
+    nav a {
+        font-size: 20%;
+    }
+}
+
+@media (max-width:135px) {
+    nav a {
+        font-size: 20%;
+    }
 }
