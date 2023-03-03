@@ -31,6 +31,12 @@ nav {
 #projectsPage a {
     color: rgb(75, 117, 255);
 }
+#email {
+    color: rgb(75, 117, 255);
+}
+contact {
+    text-align: center;
+}
 #socialsPage {
     text-align: center;
     display: none;
