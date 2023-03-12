@@ -8,6 +8,9 @@ nav a {
     font-weight: 400;
     font-size: 200%;
 }
+a {
+    color: rgb(75, 117, 255);
+}
 nav {
     display: flex;
     justify-content: center;
