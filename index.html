@@ -20,11 +20,11 @@
         <nav>
             <!-- Lighthouse, how do you expect me to make it easy to update the navbar by using different .html files?-->
             <img id="logo" src="logo.png" alt="Logo"> 
-            <a onclick="mainPage()">home</a> 
-            <a onclick="projectsPage()">projects</a> 
-            <a onclick="socialsPage()">socials</a> 
-            <a onclick="sitesPage()">sites</a> 
-            <a href="https://blog.biitle.nl/">blog</a>
+            <a id="mainBtn" onclick="mainPage()">home</a> 
+            <a id="projectsBtn" onclick="projectsPage()">projects</a> 
+            <a id="socialsBtn" onclick="socialsPage()">socials</a> 
+            <a id="sitesBtn" onclick="sitesPage()">sites</a> 
+            <a id="blogBtn" href="https://blog.biitle.nl/">blog</a>
         </nav>
         <content>
             <div id="mainPage">
@@ -82,11 +82,21 @@
 
     <script>
         // Website Tab Handler
-        // Define divs
+        // Define pages
         var mnPage = document.getElementById("mainPage");
         var prPage = document.getElementById("projectsPage");
         var soPage = document.getElementById("socialsPage");
         var stPage = document.getElementById("sitesPage");
+
+        // Define buttons
+        var mnBtn = document.getElementById("mainBtn")
+        var prBtn = document.getElementById("projectsBtn")
+        var soBtn = document.getElementById("socialsBtn")
+        var stBtn = document.getElementById("sitesBtn")
+        var blBtn = document.getElementById("blogBtn")
+
+
+        let mobile;
 
         // Main Page
         function mainPage() {
@@ -96,6 +106,7 @@
             stPage.style.display = "none";
         }
 
+        // Projects Page
         function projectsPage() {
             mnPage.style.display = "none";
             prPage.style.display = "block";
@@ -103,6 +114,7 @@
             stPage.style.display = "none";
         }
         
+        // Socials Page
         function socialsPage() {
             mnPage.style.display = "none";
             prPage.style.display = "none";
@@ -110,11 +122,32 @@
             stPage.style.display = "none";
         }
 
+        // Sites Page
         function sitesPage() {
             mnPage.style.display = "none";
             prPage.style.display = "none";
             soPage.style.display = "none";
             stPage.style.display = "block";
+        }
+
+        // Mobile
+
+        // Detect Mobile
+        function mobile() {
+            if(navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)) {
+                mobile = true;
+            }
+        }
+
+        // Switch to Mobile mode
+        function mobileMode(mobile) {
+            
         }
     </script>
 </body>
