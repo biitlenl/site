@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="main">
-        <nav>
+        <nav id="nav">
             <!-- Lighthouse, how do you expect me to make it easy to update the navbar by using different .html files?-->
             <img id="logo" src="logo.png" alt="Logo"> 
             <a id="mainBtn" onclick="mainPage()">home</a> 
@@ -133,22 +133,34 @@
         // Mobile
 
         // Detect Mobile
-        function mobile() {
+        // bugfix: mobile was alredy declared
+        function mobileCheck() {
             if(navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/webOS/i)
             || navigator.userAgent.match(/iPhone/i)
             || navigator.userAgent.match(/iPad/i)
             || navigator.userAgent.match(/iPod/i)
             || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Samsung/i)
             || navigator.userAgent.match(/Windows Phone/i)) {
+                mobile = true;
+            }
+
+            if(navigator.userAgentData.mobile = true) {
                 mobile = true;
             }
         }
 
         // Switch to Mobile mode
         function mobileMode(mobile) {
-            
+            if(mobile == true) {
+                var navbar = document.getElementById("nav");
+                navbar.style.fontSize = "90%"
+            }
         }
+
+        mobileCheck();
+        mobileMode(mobile);
     </script>
 </body>
 </html>
