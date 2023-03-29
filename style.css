@@ -3,6 +3,9 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+html {
+    background-color: black;
+}
 nav a {
     margin-right: 10px;
     font-weight: 400;
