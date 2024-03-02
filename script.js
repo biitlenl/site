@@ -68,7 +68,7 @@ function mobileCheck() {
 function mobileMode(mobile) {
   if(mobile == true) {
     var navbar = document.getElementById("nav");
-    navbar.style.fontSize = 80%"
+    navbar.style.fontSize = "80%"
   }
 }
 
