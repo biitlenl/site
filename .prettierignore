@@ -1,0 +1,9 @@
+old
+node_modules
+LICENSE
+tailwind.config.js
+CNAME
+package.json
+package-lock.json
+src/assets
+src/fonts
