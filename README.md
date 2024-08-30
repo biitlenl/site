@@ -25,6 +25,10 @@ biitle.nl does **NOT** have a tool like [Vite](https://vitejs.dev) to run a serv
 
 Do `git clone https://github.com/fgclue/biitle.nl`, to test, read the section above.
 
+## TODO: SET UP GITHUB ACTIONS TO AUTOMATICALLY REPLICATE MAIN BRANCH TO GH-PAGES
+
+## TODO: FINISH PORTFOLIO
+
 <!---------------------[Badges]--------------------->
 
 [Badge GitHub Actions]: https://img.shields.io/github/actions/workflow/status/fgclue/biitle.nl/a?label=Build
