@@ -1,0 +1,7 @@
+user-agent: *
+
+disallow: 404.html
+disallow: assets/
+disallow: components/
+disallow: fonts/
+disallow: .well_known/
