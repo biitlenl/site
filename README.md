@@ -25,12 +25,11 @@ biitle.nl does **NOT** have a tool like [Vite](https://vitejs.dev) to run a serv
 
 Do `git clone https://github.com/fgclue/biitle.nl`, to test, read the section above.
 
-
 ## TODO: FINISH PORTFOLIO
 
 <!---------------------[Badges]--------------------->
 
-[Badge GitHub Actions]: https://img.shields.io/github/actions/workflow/status/fgclue/biitle.nl/a?label=Build
+[Badge GitHub Actions]: https://img.shields.io/github/actions/workflow/status/fgclue/biitle.nl/move.yml?label=Automatic%20Branch%20Copying
 [Badge Commits]: https://img.shields.io/github/commit-activity/m/fgclue/biitle.nl?label=Commits
 [Badge Up]: https://img.shields.io/website?url=https%3A%2F%2Fbiitle.nl&label=Website%3A%20biitle.nl
 [Badge License]: https://img.shields.io/badge/License-MIT-red.svg
