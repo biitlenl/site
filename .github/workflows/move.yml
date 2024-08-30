@@ -4,6 +4,8 @@ on: [push]
 
 jobs:
   copy:
+    permissions:
+      contents: write
     name: Copy src
     runs-on: ubuntu-latest
     steps:
