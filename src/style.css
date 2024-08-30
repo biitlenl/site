@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+#logoimg {
+  width: 96px;
+  height: 96px;
+}
+
+section[text] {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+}
+
+section[portfolio] {
+  width: 100vw;
+  display: flex;
+}
+
+.size {
+  width: 100%;
+}
