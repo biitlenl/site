@@ -1,0 +1,344 @@
+<!doctype html>
+<!-- Found a bug? Report it here: github.com/fgclue/biitle.nl -->
+<html lang="en" class="scroll-smooth">
+  <head>
+
+  <!-- YOU'VE JUST BEEN GTAGGED LOL! (or not) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ2GW8SFXG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DJ2GW8SFXG');
+    </script>
+  <!-- gimme ur data lol -->
+
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="assets/logob.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="main.css" media="all" />
+    <link rel="stylesheet" href="kbd.css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>clue's home</title>
+  </head>
+  <body>
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <img class="h-8 w-auto" src="assets/logobl.png" alt="biitle.nl" />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a
+                  href="#home"
+                  class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page"
+                  >Home</a
+                >
+                <!-- <a
+                  href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Portfolio</a
+                > -->
+                <a
+                  href="#sites"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Sites</a
+                >
+                <a
+                  href="#socials"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Socials</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <a href="https://github.com/fgclue"
+              ><button
+                type="button"
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">GitHub</span>
+                <svg
+                  class="h-6 w-6"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <a href="https://gitlab.com/fgclue"
+              ><button
+                type="button"
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">GitLab</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="white"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitLab</title>
+                  <path
+                    d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <a href="mailto:lost@biitle.nl"
+              ><button
+                type="button"
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">E-mail</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="white"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>E-mail</title>
+                  <path
+                    d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <a href="https://mastodon.social/@lostdev"
+              ><button
+                type="button"
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">Mastodon</span>
+                <svg class="w-6 h-6"
+                  fill="white"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Mastodon</title>
+                  <path
+                    d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a
+            href="#home"
+            class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+            aria-current="page"
+            >Home</a
+          >
+          <!-- <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Portfolio</a
+          > -->
+          <a
+            href="#sites"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Site</a
+          >
+          <a
+            href="#socials"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Socials</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main class="page1">
+      <div id="banner" class="bg-blue-400 w-full h-max flex items-center justify-center">
+        <p class="flex items-center justify-center p-2">biitle.nl has a new look! Read the blog post for more information.</p>
+        <a target="_blank" href="https://fgclue.wordpress.com">
+          <button class="flex justify-end hover:bg-blue-500 hover:bg-opacity-20 rounded-md m-1 p-2 w-auto h-auto align-middle items-center aspect-square text-center">➡️</button>
+        </a>
+      </div>
+      <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#7dd3fc,transparent)]"></div></div>
+      <section class="bg-gradient-to-tr from-zinc-950 to-zinc-900 backdrop-blur-xl shadow-2xl w-max p-16">
+        <div class="flex justify-end">
+          <a target="_blank" href="https://zenfocus.biitle.nl">
+            <button class="px-5 bg-violet-950 shadow-violet-950 shadow-xl hover:shadow-violet-900 transition-all ease-in-out duration-300 bg-opacity-30 outline outline-1 outline-indigo-800 rounded-xl">Try Zenfocus, the future of productivity. 🌙</button>
+          </a>
+        </div>
+        <section text>
+          <h1 class="drop-shadow-xl text-9xl m-8 text-left w-max">hi,<br>i'm clue.<br></h1>
+        </section>
+        <section text>
+          <h1 class="drop-shadow-xl text-9xl m-8 text-right size text-clip text-transparent bg-clip-text bg-gradient-to-br backdrop-blur-3xl from-violet-500 to-indigo-950 max-xl:m-6 max-xl:p-6 w-max">i make stuff!<br>welcome.</h1>
+        </section>
+      </section>
+
+      <section class="bg-gradient-to-br from-stone-950 to-neutral-950 shadow-2xl" portfolio>
+          <h1 class="hover:text-slate-300 ease-in-out transition-all text-9xl m-8 font-black drop-shadow-2xl bg-gradient-to-tr bg-clip-text text-transparent from-violet-400 to-indigo-950">Portfolio</h1>
+          <p style="font-family: 'Space Mono', monospace;" class="hover:text-5xl hover:underline hover:text-blue-200 ease-in-out transition-all m-8 text-4xl hackery">My portfolio, where I put all my project links and showcases. <b>Under construction.</b></p>
+      </section>
+
+      <section class="bg-gradient-to-bl from-stone-950 to-neutral-950" portfolio>
+        <h1 class="hover:text-slate-300 ease-in-out transition-all text-9xl m-8 font-black drop-shadow-2xl bg-gradient-to-tr bg-clip-text text-transparent from-violet-400 to-indigo-950">Sites</h1>
+        <p style="font-family: 'Space Mono', monospace;" class="hover:text-6xl hover:underline hover:text-blue-200 ease-in-out transition-all m-8 text-5xl hackery">All my other websites and subdomains. <a href="#sites"><b>Click here to enter.</b></a></p>
+      </section>
+
+      <section class="bg-gradient-to-tl from-stone-950 to-neutral-950" portfolio>
+        <h1 class="hover:text-slate-300 ease-in-out transition-all text-9xl m-8 font-black drop-shadow-2xl bg-gradient-to-tr bg-clip-text text-transparent from-violet-400 to-indigo-950">Socials</h1>
+        <p style="font-family: 'Space Mono', monospace;" class="hover:text-6xl hover:underline hover:text-blue-200 ease-in-out transition-all m-8 text-5xl hackery">My socials are <b>down below.</b> Scroll down to see them!</p>
+      </section>
+
+      <section class="grid grid-cols-2 grid-rows-2 bg-slate-950 overflow-hidden bg-[url('assets/mountain.jpg')] bg-cover" id="socials">
+        <figure class="bg-gradient-to-tr from-slate-950/30 to-slate-400/30 backdrop-blur-sm rounded-xl p-8 m-8 outline-indigo-50 hover:outline hover:outline-8 transition-all ease-in-out text-right">
+          <section class="m-8">
+            <img src="assets/github.svg" class="size-32 absolute max-xl:hidden">
+            <h1 class="text-5xl">GitHub</h1>
+            <p class="text-2xl">@fgclue</p>
+            <a href="https://github.com/fgclue"><p style="font-family: 'Space Mono', monospace;" class="text-3xl hover:underline hover:text-4xl cursor-pointer transition-all ease-in-out duration-300">ENTER SITE</p></a>
+          </section>
+        </figure>
+
+        <figure class="bg-gradient-to-tr from-slate-950/30 to-slate-400/30 backdrop-blur-sm rounded-xl p-8 m-8 outline-indigo-50 hover:outline hover:outline-8 transition-all ease-in-out text-right">
+          <section class="m-8">
+            <img src="assets/email.svg" class="size-32 absolute max-xl:hidden">
+            <h1 class="text-5xl">E-mail</h1>
+            <p class="text-2xl">lost@biitle.nl</p>
+            <a href="mailto:lost@biitle.nl"><p style="font-family: 'Space Mono', monospace;" class="text-3xl hover:underline hover:text-4xl transition-all ease-in-out duration-300 cursor-pointer">SEND E-MAIL</p></a>
+          </section>
+        </figure>
+
+        <figure class="bg-gradient-to-tr from-slate-950/30 to-slate-400/30 backdrop-blur-sm rounded-xl p-8 m-8 outline-indigo-50 hover:outline hover:outline-8 transition-all ease-in-out text-right">
+          <section class="m-8">
+            <img src="assets/gitlab.svg" class="size-32 absolute max-xl:hidden">
+            <h1 class="text-5xl">GitLab</h1>
+            <p class="text-2xl">@fgclue</p>
+            <a href="https://github.com/fgclue"><p style="font-family: 'Space Mono', monospace;" class="text-3xl hover:underline hover:text-4xl transition-all ease-in-out duration-300 cursor-pointer">ENTER SITE</p></a>
+          </section>
+        </figure>
+
+        <figure class="bg-gradient-to-tr from-slate-950/30 to-slate-400/30 backdrop-blur-sm rounded-xl p-8 m-8 outline-indigo-50 hover:outline hover:outline-8 transition-all ease-in-out text-right">
+          <section class="m-8">
+            <img src="assets/wordpress.svg" class="size-32 absolute max-xl:hidden">
+            <h1 class="text-5xl">Blog</h1>
+            <p class="text-2xl">fgclue.wordpress.com</p>
+            <a href="https://fgclue.wordpress.com/"><p style="font-family: 'Space Mono', monospace;" class="text-3xl hover:underline hover:text-4xl transition-all ease-in-out duration-300">READ BLOG</p></a>
+          </section>
+        </figure>
+      </section>
+
+      <section id="sites">
+        <section>
+          <h1 class="text-9xl m-8 text-center">Sites</h1>
+        </section>
+
+        <br>
+        <section class="grid grid-cols-2 grid-rows-1 h-64">
+          <figure class="overflow-hidden p-8 inset-0 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] backdrop-blur-3xl  shadow-violet-500">
+            <a target="_blank" href="https://zenfocus.biitle.nl">
+              <button class="text-xl hover:bg-slate-950 z-50 p-2 rounded-xl transition-all ease-in-out m-1">↗️ ENTER</button>
+            </a>
+            <h1 class="text-5xl" style="font-family: 'Space Mono', monospace;">ZENFOCUS</h1>
+            <p>
+              Zenfocus is a extension made for blocking distractions, to make you more productive.
+            </p><br>
+          </figure>
+          <figure class="overflow-hidden p-8 inset-0 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] backdrop-blur-3xl  shadow-violet-500">
+            <a target="_blank" href="https://rng.biitle.nl">
+              <button class="text-xl hover:bg-slate-950 z-50 p-2 rounded-xl transition-all ease-in-out m-1">↗️ ENTER</button>
+            </a>
+            <h1 class="text-5xl" style="font-family: 'Space Mono', monospace;">PUZZLE GAME</h1>
+            <p>
+              A little puzzle game I made in my spare time.
+            </p><br>
+          </figure>
+        </section>
+      </section>
+    </main>
+
+    <footer class="flex bg-gradient-to-b from-gray-800 via-gray-900 to-black">
+      <section class="m-8 grid-rows-2 grid-cols-2 flex">
+        <img src="assets/logobl.png" class="size-16">
+        <section class="ml-4 mr-4">
+          <p class="text-xl">built with ❤️ by biitle.nl</p>
+          <a href="https://zenfocus.biitle.nl" class="text-gray-300 hover:underline">zenfocus</a>
+          <br>
+          <a href="https://github.com/fgclue/biitle.nl" class="text-gray-300 hover:underline">source code</a>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>
