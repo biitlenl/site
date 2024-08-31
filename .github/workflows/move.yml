@@ -23,6 +23,9 @@ jobs:
           git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
           rm -rf docs
           mv src docs
+
+          echo "biitle.nl" > docs/CNAME
+          
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin $TARGET_BRANCH # push to remote branch
