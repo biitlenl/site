@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IE on Windows 11</title>
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+
+            background-color: #fff;
+            color: black;
+            font-family: 'Segoe UI';
+            display: flex;
+            align-items: center;
+        }
+
+        .main {
+            width: 100%;
+            width: 25vh;
+            float: left;
+            margin: 0px;
+        }
+
+        .step {
+            width: 33vw;
+            float: left;
+            margin: 0px;
+        }
+
+        .sub {
+            display: flex;
+            float: left;
+            margin: 0px;
+            padding: 90px 40px;
+        }
+        code {
+            padding: 5px 6px;
+            border-radius: 8px;
+            background-color: #f2f2f2;
+        }
+        img {
+            text-align: center;
+            width: 80%;
+            border-radius: 4px;
+        }
+        button {
+            width: 15%;
+            padding: 0px 3px;
+            border: 2px solid #0e76ff;
+            border-radius: 5px;
+            background-color: #5aa1ff;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        button:hover {
+            border-color: #006eff;
+            background-color: #4b99ff;
+        }
+
+        kbd {
+            background-color: #eee;
+            border-radius: 3px;
+            border: 1px solid #b4b4b4;
+            box-shadow:
+                0 1px 1px rgba(0, 0, 0, 0.2),
+                0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+            color: #333;
+            display: inline-block;
+            font-size: 0.85em;
+            font-weight: 700;
+            line-height: 1;
+            padding: 2px 4px;
+            white-space: nowrap;
+        }
+
+        input {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main flex">
+        <h1 style="text-align: center; width: 100vw;">Internet Explorer on Windows 11</h1>
+        <div class="sub">
+            <div class="step">
+                <h1>Step 1</h1>
+                <p>Open the Windows run box by pressing <kbd>Win</kbd> + <kbd>R</kbd></p>
+                <img src="first.png">
+            </div>
+            <div class="step">
+                <h1>Step 2</h1>
+                <p>Type <code>mshta https://biitle.nl/ie</code> and press <kbd>Enter</kbd></p>
+                <img src="second.png">
+            </div>
+            <div class="step">
+                <h1>Step 3</h1>
+                <p>Press the button below in the new window</p>
+                <a href="https://google.com" target="_blank"><button>Start IE</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
