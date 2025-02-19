@@ -1,2 +1,0 @@
-# If you found a bug, please report it here:
-GitHub: github.com/fgclue/biitle.nl
