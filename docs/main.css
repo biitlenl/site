@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -566,6 +566,10 @@ video {
   border-width: 0;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -574,16 +578,8 @@ video {
   position: relative;
 }
 
-.-inset-0 {
-  inset: -0px;
-}
-
 .-inset-0\.5 {
   inset: -0.125rem;
-}
-
-.-inset-1 {
-  inset: -0.25rem;
 }
 
 .-inset-1\.5 {
@@ -627,14 +623,6 @@ video {
   margin: 0.25rem;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
-.m-6 {
-  margin: 1.5rem;
-}
-
 .m-8 {
   margin: 2rem;
 }
@@ -666,10 +654,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.list-item {
-  display: list-item;
 }
 
 .hidden {
@@ -706,6 +690,10 @@ video {
   height: 2rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-auto {
   height: auto;
 }
@@ -717,14 +705,6 @@ video {
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .w-6 {
@@ -758,10 +738,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .grid-cols-2 {
@@ -828,6 +804,11 @@ video {
   border-radius: 0.75rem;
 }
 
+.bg-\[\#fdf6e3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 246 227 / var(--tw-bg-opacity));
+}
+
 .bg-blue-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
@@ -841,16 +822,6 @@ video {
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
-.bg-neutral-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-slate-950 {
@@ -978,9 +949,9 @@ video {
           background-clip: text;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-1 {
@@ -1014,11 +985,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1033,8 +999,20 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pl-16 {
+  padding-left: 4rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-2 {
@@ -1057,6 +1035,10 @@ video {
   vertical-align: middle;
 }
 
+.font-\[Unna\] {
+  font-family: Unna;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1077,14 +1059,13 @@ video {
   line-height: 1;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-\[22vh\] {
+  font-size: 22vh;
 }
 
 .text-base {
@@ -1106,12 +1087,16 @@ video {
   font-weight: 900;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-gray-300 {
@@ -1122,6 +1107,11 @@ video {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 .text-transparent {
@@ -1136,18 +1126,6 @@ video {
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-4xl {
-  --tw-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.35);
-  --tw-shadow-colored: 0 0px 40px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1196,19 +1174,19 @@ video {
 .backdrop-blur-3xl {
   --tw-backdrop-blur: blur(64px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .backdrop-blur-xl {
   --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-all {
@@ -1236,29 +1214,21 @@ video {
 }
 
 body {
-  background: black;
-  color: white;
-  font-family: Roboto, sans-serif;
+  background: #eee8d5;
+  color: black;
+  font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-#logoimg {
-  width: 96px;
-  height: 96px;
+nav {
+  font-size: 2vh;
+  text-align: center;
+  color: black;
+  margin-top: 5pt;
 }
 
-section[text] {
-  width: 60vw;
-  display: flex;
-  justify-content: center;
-}
-
-section[portfolio] {
-  width: 100vw;
-  display: flex;
-}
-
-.size {
-  width: 100%;
+h1:hover {
+  -webkit-text-stroke: 5px currentColor;
+  transition: all 5s;
 }
 
 .hover\:bg-blue-500:hover {
@@ -1269,11 +1239,6 @@ section[portfolio] {
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-slate-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-slate-950:hover {
@@ -1298,6 +1263,10 @@ section[portfolio] {
 .hover\:text-6xl:hover {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
 }
 
 .hover\:text-blue-200:hover {
@@ -1369,10 +1338,6 @@ section[portfolio] {
     display: none;
   }
 
-  .max-xl\:w-10\/12 {
-    width: 83.333333%;
-  }
-
   .max-xl\:p-6 {
     padding: 1.5rem;
   }
@@ -1417,13 +1382,6 @@ section[portfolio] {
   }
 }
 
-@media (min-width: 768px) {
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
 @media (min-width: 1024px) {
   .lg\:px-8 {
     padding-left: 2rem;
@@ -1432,7 +1390,7 @@ section[portfolio] {
 }
 
 @media (min-width: 1280px) {
-  .xl\:m-8 {
-    margin: 2rem;
+  .xl\:pt-28 {
+    padding-top: 7rem;
   }
 }

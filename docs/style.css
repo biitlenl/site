@@ -7,27 +7,22 @@
 }
 
 body {
-  background: black;
-  color: white;
-  font-family: Roboto, sans-serif;
+  background: #eee8d5;
+  color: black;
+  font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-#logoimg {
-  width: 96px;
-  height: 96px;
+nav {
+  font-size: 2vh;
+  text-align: center;
+  color: black;
+  margin-top: 5pt;
 }
 
-section[text] {
-  width: 60vw;
-  display: flex;
-  justify-content: center;
-}
-
-section[portfolio] {
-  width: 100vw;
-  display: flex;
-}
-
-.size {
-  width: 100%;
+h1:hover {
+  -webkit-text-stroke: 5px currentColor;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
 }
