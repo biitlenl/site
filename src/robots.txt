@@ -1,7 +1,7 @@
-user-agent: *
+User-Agent: *
 
-disallow: 404.html
-disallow: assets/
-disallow: components/
-disallow: fonts/
-disallow: .well_known/
+Disallow: /assets
+Disallow: /css
+Disallow: /files
+Disallow: /fonts
+Disallow: index.old.html
