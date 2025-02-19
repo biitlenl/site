@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #eee8d5;
+  background: #fff4d7;
   color: black;
   font-family: "Inter", "Segoe UI", sans-serif;
 }
@@ -17,12 +17,4 @@ nav {
   text-align: center;
   color: black;
   margin-top: 5pt;
-}
-
-h1:hover {
-  -webkit-text-stroke: 5px currentColor;
-  -webkit-transition: all 5s;
-  -moz-transition: all 5s;
-  -o-transition: all 5s;
-  transition: all 5s;
 }
