@@ -26,15 +26,15 @@
 
     <title>biitle.nl</title>
 </head>
-<body>
-    <nav class="fixed w-full flex justify-between px-16 overflow-hidden h-[3%] text-orange-800">
-        <img class="h" src="assets/logob.png">
-        <a>biitle.nl</a>
+<body class="scroll-smooth">
+    <nav class="fixed w-full flex justify-between px-16 bg-[#fdf6e3] -top-2 overflow-hidden h-[3%] py-6 items-center text-orange-800">
+        <img class="h-8" src="assets/logob.png">
+        <a class="hover:text-3xl transition-all duration-200" href="">biitle.nl</a>
         
-        <a href="#home">Home</a>
-        <a href="#sites">Sites</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="#etc">Etc</a>
+        <a class="hover:text-3xl transition-all duration-200" href="#home">Home</a>
+        <a class="hover:text-3xl transition-all duration-200" href="#sites">Sites</a>
+        <a class="hover:text-3xl transition-all duration-200" href="/portfolio">Portfolio</a>
+        <a class="hover:text-3xl transition-all duration-200" href="#etc">Etc</a>
     </nav>
     <section class="big-links pl-8 xl:pl-16 pr-4 pt-16 xl:pt-16 grid grid-cols-2 leading-none overflow-hidden h-[120vh] md:h-[100vh] bg-[#fdf6e3]">
         <div>
@@ -53,10 +53,31 @@
         </div>
         <img src="assets/unsplash/mountain.jpg" class="overflow-hidden object-contain rounded-xl">
     </section>
-    <section id="home" class="p-8 font-[Unna]">
+    <section id="home" class="p-8 font-[Inter] px-[30vw]">
         <h1 class="font-[Unna] text-[22vh] text-orange-500 italic transition-all ease-in-out">home</h1>
-        <p class="text-3xl">Welcome to my website. I am clue, a full-stack developer. I'm very interested in programming and I am currently working on a POS-system server called <span class="text-cyan-600">FluidServer</span>. I'm trying to learn Rust and C++ for lower level development and I like creating enterprise solutions.</p>
-        <p class="text-xl text-neutral-800">My timezone is GMT-3 (America/Sao_Paulo).</p>
+        <p class="text-xl font-[Inter] leading-tight">
+            Hey, I'm clue.
+            <br><br>
+            <span class="flex items-center gap-1">
+                Creator of 
+                <a href="https://fluidserver.biitle.nl">
+                    <span class="bg-blue-300 text-blue-800 hover:border-blue-300 hover:border-[8px] rounded-md px-1.5 py-0.5 overflow-hidden flex items-center gap-2 transition-all duration-150">
+                        <img src="https://avatars.githubusercontent.com/u/180588364?s=400&v=4" class="h-4 rounded-sm">FluidServer
+                    </span>
+                </a>
+                <a href="https://libracino.biitle.nl">
+                    <span class="bg-blue-300 text-blue-800 hover:border-blue-300 hover:border-[8px] rounded-md px-1.5 py-0.5 overflow-hidden flex items-center gap-2 transition-all duration-150">
+                        <img src="https://avatars.githubusercontent.com/u/194405747?s=400&v=4" class="h-4 rounded-sm">Libracino
+                    </span>
+                </a>
+            </span>
+            <br>
+
+            I like programming a lot. You can find all <a href="/projects" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">my projects here</a>. I also like <a href="https://goodreads.com/fgclue" target="_blank" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">reading books</a> in my free time.
+            <br><br>
+            I don't give talks, but I do write <a href="//blog.biitle.nl" target="_blank" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">blog posts</a>. You can check that out <a href="https://goodreads.com/fgclue" target="_blank" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">here</a>.
+        </p>
+        <p class="text-xl text-neutral-800">My timezone is GMT-3 (America/Brasilia).</p>
     </section>
 </body>
 </html>
