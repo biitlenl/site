@@ -18,3 +18,21 @@ nav {
   color: black;
   margin-top: 5pt;
 }
+
+.site-card {
+  transition: 700ms cubic-bezier(.78,0,.73,.99);
+  transition-property: border-radius;
+}
+
+.site-card:hover {
+  border-radius: 20pc;
+}
+
+.dim, #dim {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6; /* see below for cross-browser opacity */
+}
