@@ -20,19 +20,31 @@ nav {
 }
 
 .site-card {
-  transition: 700ms cubic-bezier(.78,0,.73,.99);
-  transition-property: border-radius;
+  transition: 500ms ease-in-out 100ms;
+  transition-property: all;
 }
 
 .site-card:hover {
   border-radius: 20pc;
+  z-index: 200000;
 }
 
+.site-card:hover ~ .dim {
+  opacity: 0.5;
+  display: block;
+}
+
+
+
 .dim, #dim {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.6; /* see below for cross-browser opacity */
+  opacity: 0;
+  z-index: 9999;
+  transition: 400ms ease-in;
+  transition-property: all;
 }
