@@ -5,7 +5,7 @@
     biitle.nl
 </h1>
 
-<p align="center">
+<p align="center" style="display: flex; align-items: center; justify-content: center;">
 
 ![Badge GitHub Actions] ![Badge Commits] ![Badge Up] ![Badge License] ![Badge Issues]
 
@@ -18,14 +18,19 @@ This is my personal homepage, where I have my:
 - Socials
 - and projects
 
-## Testing
-biitle.nl does **NOT** have a tool like [Vite](https://vitejs.dev) to run a server for testing, so you have to use something like [Live Server for Visual Sutdio Code](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) or [Live Preview for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) to test the website.
+## Contributing
+Fork this repo and clone it.
 
-## Cloning
+Create a new branch: `git checkout -b your/branch`
 
-Do `git clone https://github.com/fgclue/biitle.nl`, to test, read the section above.
+Then, start your web server and run `npm run tailwind`.
 
-## TODO: FINISH PORTFOLIO
+After that, commit your work: `git commit -am "Message"`
+
+and then push your work: `git push origin your/branch`
+
+Now, create a PR on the main repo.
+
 
 <!---------------------[Badges]--------------------->
 
