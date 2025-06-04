@@ -4,7 +4,9 @@
   "description": "The biitle.nl site",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/style.css -o ./src/main.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,9 @@
     "url": "https://github.com/fgclue/biitle.nl/issues"
   },
   "homepage": "https://github.com/fgclue/biitle.nl#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.4.3"
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
   }
 }
