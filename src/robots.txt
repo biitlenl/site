@@ -1,7 +1,0 @@
-User-Agent: *
-
-Disallow: /assets
-Disallow: /css
-Disallow: /files
-Disallow: /fonts
-Disallow: index.old.html
