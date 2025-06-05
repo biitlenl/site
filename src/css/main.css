@@ -5,3 +5,7 @@ body {
     color: white;
     font-family: 'Inter', 'SF Pro Text', 'Segoe UI', sans-serif;
 }
+
+.-mt-full {
+    margin-top: -100%;
+}
