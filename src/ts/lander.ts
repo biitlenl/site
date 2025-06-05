@@ -1,7 +1,9 @@
 const icon = (document.getElementById("icon") as HTMLDivElement);
 const description = (document.getElementById("description") as HTMLParagraphElement);
+const hint = (document.getElementById("hint") as HTMLDivElement);
 
 const mice = (document.getElementById("cursor") as HTMLDivElement);
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 function animation() {
     const item = Math.floor(Math.random() * icon.childElementCount);
@@ -25,4 +27,31 @@ function animation() {
     });
 }
 
-icon?.addEventListener("mouseenter", animation)
+function enter(text: string) {
+    hint.classList.add("w-max");
+    hint.classList.add("visible");
+    hint.classList.remove("opacity-0");
+
+    hint.textContent = text;
+}
+
+function hrefEnter(event: MouseEvent) {
+    enter((event.target as HTMLAnchorElement).href);
+}
+
+function leave() {
+    hint.classList.add("opacity-0");
+}
+
+icon?.addEventListener("mouseenter", animation);
+icon?.addEventListener("click", animation);
+
+const a = document.querySelectorAll("a");
+
+a.forEach((element: HTMLAnchorElement) => {
+    element.addEventListener("mouseover", hrefEnter);
+    element.addEventListener("mouseleave", leave);
+})
+
+icon?.addEventListener("mouseover", () => { enter("Click to change project") });
+icon?.addEventListener("mouseleave", () => { leave() });
