@@ -9,3 +9,16 @@ body {
 .-mt-full {
     margin-top: -100%;
 }
+
+::selection {
+	@apply bg-purple-500 text-white
+}
+
+
+a::selection {
+    @apply bg-blue-800 text-white
+}
+
+footer *::selection {
+    @apply bg-blue-800 text-white
+}
