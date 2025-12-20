@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 body {
-    background-color: #121212;
-    color: white;
+    background-color: #f8f8f2;
+    color: black;
     font-family: 'Inter', 'SF Pro Text', 'Segoe UI', sans-serif;
 }
 
@@ -10,8 +10,8 @@ body {
     margin-top: -100%;
 }
 
-::selection {
-	@apply bg-purple-500 text-white
+*::selection {
+	@apply bg-amber-400;
 }
 
 img {
@@ -24,10 +24,10 @@ img {
     pointer-events: none;
 }
 
-a::selection {
-    @apply bg-blue-800 text-white
+a.styled {
+    @apply underline text-blue-700;
 }
 
-footer *::selection {
-    @apply bg-blue-800 text-white
+.project {
+    @apply bg-white w-full h-20 rounded-md overflow-hidden bg-no-repeat flex flex-row justify-center items-center;
 }
