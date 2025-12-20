@@ -1,0 +1,10 @@
+# biitle.nl
+
+Contact: mailto:contact@biitle.nl
+Contact: https://biitle.nl
+Preferred-Languages: en, pt
+
+Canonical: https://biitle.nl/.well-known/security.txt
+Policy: https://biitle.nl/.well-known/securitypol.md
+
+Hiring: not yet

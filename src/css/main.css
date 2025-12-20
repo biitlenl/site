@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+body {
+    background-color: #f8f8f2;
+    color: black;
+    font-family: 'Inter', 'SF Pro Text', 'Segoe UI', sans-serif;
+}
+
+.-mt-full {
+    margin-top: -100%;
+}
+
+*::selection {
+	@apply bg-amber-400;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+a.styled {
+    @apply underline text-blue-700;
+}
+
+.project {
+    @apply bg-white w-full h-20 rounded-md overflow-hidden bg-no-repeat flex flex-row justify-center items-center;
+}

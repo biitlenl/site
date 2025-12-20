@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css" media="all" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Gtag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ2GW8SFXG"></script>
@@ -13,80 +14,75 @@
         gtag('config', 'G-DJ2GW8SFXG');
     </script>
 
-    <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="assets/logob.png" type="image/x-icon" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="main.css" media="all" />
+    <link rel="shortcut icon" href="assets/logobl.png" type="image/x-icon" />
 
     <title>biitle.nl</title>
 </head>
-<body class="scroll-smooth">
-    <nav class="fixed w-full flex justify-between px-16 bg-[#fdf6e3] -top-2 overflow-hidden h-[3%] py-6 items-center text-orange-800">
-        <img class="h-8" src="assets/logob.png">
-        <a class="hover:text-3xl transition-all duration-200" href="">biitle.nl</a>
-        
-        <a class="hover:text-3xl transition-all duration-200" href="#home">Home</a>
-        <a class="hover:text-3xl transition-all duration-200" href="#sites">Sites</a>
-        <a class="hover:text-3xl transition-all duration-200" href="/portfolio">Portfolio</a>
-        <a class="hover:text-3xl transition-all duration-200" href="#etc">Etc</a>
+<body class="scroll-smooth flex flex-col justify-center items-center px-2">
+    <nav class="py-8 md:py-2 px-8 flex flex-col max-md:w-full md:flex-row items-start md:items-center md:gap-2 mb-0 md:mb-4">
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors flex flex-row justify-center items-center gap-2" href="#">
+            <img src="assets/logobl.png" class="h-3">
+            biitle.nl
+        </a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="#">Home</a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="#projects">Projects</a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="#about">About</a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="https://blog.biitle.nl">Blog</a>
     </nav>
-    <section class="big-links pl-8 xl:pl-16 pr-4 pt-16 xl:pt-16 grid grid-cols-2 leading-none overflow-hidden h-[120vh] md:h-[100vh] bg-[#fdf6e3]">
-        <div>
-            <a href="#home">
-                <h1 class="font-[Unna] text-[22vh] text-orange-500 italic hover:underline hover:text-[23vh] transition-all">home</h1>
-            </a>
-            <a href="#sites">
-                <h1 class="font-[Unna] text-[22vh] text-orange-500 italic hover:underline hover:text-[23vh] transition-all">sites</h1>
-            </a>
-            <a href="/portfolio">
-                <h1 class="font-[Unna] text-[22vh] text-orange-500 italic hover:underline hover:text-[23vh] transition-all">portfolio</h1>
-            </a>
-            <a href="#etc">
-                <h1 class="font-[Unna] text-[22vh] text-orange-500 italic hover:underline hover:text-[23vh] transition-all">etc</h1>
-            </a>
-        </div>
-        <img src="assets/unsplash/mountain.jpg" class="overflow-hidden object-contain rounded-xl">
-    </section>
-    <section id="home" class="p-8 font-[Inter] px-[30vw]">
-        <h1 class="font-[Unna] text-[22vh] text-orange-500 italic transition-all ease-in-out">home</h1>
-        <p class="text-[2.5vh] font-[Inter] leading-tight">
-            Hey, I'm clue.
-            <br><br>
-            <span class="flex items-center gap-1">
-                Creator of 
-                <a href="https://fluidserver.biitle.nl">
-                    <span class="bg-blue-300 text-blue-800 hover:border-blue-300 hover:border-[8px] rounded-[1vh] px-1.5 py-0.5 overflow-hidden flex items-center gap-2 transition-all duration-150">
-                        <img src="https://avatars.githubusercontent.com/u/180588364?s=400&v=4" class="h-[2vh] rounded-md">FluidServer
-                    </span>
+    <main class="2xl:w-5xl gap-4 flex flex-col">
+        <h1 class="text-2xl md:text-4xl xl:text-6xl">Hey, we're <span class="bg-amber-400">biitle.nl</span> and we make some cool stuff.</h1>
+        <section id="projects">
+            <h2 class="text-4xl mb-4">Projects</h2>
+            <div class="grid md:grid-cols-3 gap-2">
+                <a class="project gap-1 py-3 pr-3" href="https://example.com">
+                    <img src="/assets/emojis/backpack.png" class="h-full">
+                    <h1 class="text-4xl">Backpack</h1>
                 </a>
-                <a href="https://libracino.biitle.nl">
-                    <span class="bg-blue-300 text-blue-800 hover:border-blue-300 hover:border-[8px] rounded-[1vh] px-1.5 py-0.5 overflow-hidden flex items-center gap-2 transition-all duration-150">
-                        <img src="https://avatars.githubusercontent.com/u/194405747?s=400&v=4" class="h-[2vh] rounded-md">Libracino
-                    </span>
+                <a class="project gap-3 py-4 pr-3" href="https://outclock.xyz">
+                    <img src="/assets/emojis/outclock.png" class="h-full">
+                    <h1 class="text-4xl">Outclock</h1>
                 </a>
-            </span>
-            <br>
+                <a class="project bg-gradient-to-b from-blue-300 to-blue-400 text-white gap-1 py-4 pr-3" href="https://fluidserver.biitle.nl">
+                    <img src="/assets/emojis/fluidserver.png" class="h-full">
+                    <h1 class="text-4xl">FluidServer</h1>
+                </a>
+                <!-- <a class="bg-gray-200/50 w-full h-20 rounded-md overflow-hidden bg-no-repeat p-1 flex justify-center items-center select-none">
+                    <p class="text-gray-500 !decoration-0">No project here.. yet!</p>
+                </a> -->
+            </div>
+        </section>
+        <section id="about">
+            <h2 class="text-4xl mb-4">About</h2>
+            <p class="text-lg">biitle.nl is an organization that develops software, libraries and other things. Our goal is to make people's computer lives easier by making software that is intuitive and easy to use.</p>
+        </section>
+    </main>
+    <footer class="2xl:w-4xl mt-16 grid grid-cols-4 gap-2">
+        <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+                <img src="/assets/logobl.png" class="w-4">
+                <h1>biitle.nl</h1>
+            </div>
 
-            I like programming a lot. You can find all <a href="/projects" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">my projects here</a>. I also like <a href="https://goodreads.com/fgclue" target="_blank" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">reading books</a> in my free time.
-            <br><br>
-            I don't give talks, but I do write <a href="//blog.biitle.nl" target="_blank" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">blog posts</a> about FOSS, programming, etc. You can check that out <a href="https://goodreads.com/fgclue" target="_blank" class="text-blue-500 border-b-blue-300 hover:border-b-blue-500 transition-all duration-500 border-b">here</a>.
-            <br><br>
-        </p>
-        <p class="text-[2vh] text-neutral-800">My timezone is GMT-3 (America/Brasilia).</p>
-    </section>
-    <section id="sites" class="p-8 font-[Inter] px-[30vw] flex flex-col gap-3">
-        <h1 class="font-[Unna] text-[22vh] text-orange-500 italic transition-all ease-in-out">sites</h1>
-        <div class="site-card bg-gradient-to-t from-blue-400 to-blue-300 p-5 w-full text-white">
-            <h1 class="text-[5vh]">Website</h1>
+            <p>© 2025 biitle.nl</p>
         </div>
-        <div class="site-card bg-gradient-to-t from-blue-400 to-blue-300 p-5 w-full text-white">
-            <h1 class="text-[5vh]">Website</h1>
+        <div class="flex flex-col">
+            <h1>Projects</h1>
+            <a href="https://example.com" class="styled">Backpack</a>
+            <a href="https://outclock.xyz" class="styled">Outclock</a>
+            <a href="https://fluidserver.biitle.nl" class="styled">FluidServer</a>
+            <a href="https://search.biitle.nl" class="styled">biitle.nl Search</a>
         </div>
-        <div class="dim bg-black"></div>
-    </section>
+        <div class="flex flex-col">
+            <h1>Social Media</h1>
+            <a href="mailto:contact@biitle.nl" class="styled">E-mail</a>
+            <a href="https://github.com/biitlenl" class="styled">Outclock</a>
+            <a href="https://blog.biitle.nl" class="styled">Blog</a>
+        </div>
+        <div class="flex flex-col">
+            <h1>About</h1>
+            <a href="https://github.com/biitlenl/site/blob/main/src/index.html" class="styled">Edit this page</a>
+            <a href="https://github.com/biitlenl/site/" class="styled">GitHub repo</a>
+        </div>
+    </footer>
 </body>
 </html>
