@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <link rel="stylesheet" href="css/main.css" media="all" />
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Gtag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ2GW8SFXG"></script>
@@ -14,188 +14,75 @@
         gtag('config', 'G-DJ2GW8SFXG');
     </script>
 
-    <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="assets/logob.png" type="image/x-icon" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <script src="ts/lander.ts" defer></script>
-    <script src="ts/locomotive-scroll.js"></script>
-
-    <style>
-        /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */html.has-scroll-smooth{overflow:hidden}html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.has-scroll-smooth body{overflow:hidden}.has-scroll-smooth [data-scroll-container]{min-height:100vh}[data-scroll-direction=horizontal] [data-scroll-container]{display:inline-block;height:100vh;white-space:nowrap}[data-scroll-direction=horizontal] [data-scroll-section]{display:inline-block;height:100%;vertical-align:top;white-space:nowrap}.c-scrollbar{height:100%;opacity:0;position:absolute;right:0;top:0;transform-origin:center right;transition:transform .3s,opacity .3s;width:11px}.c-scrollbar:hover{transform:scaleX(1.45)}.c-scrollbar:hover,.has-scroll-dragging .c-scrollbar,.has-scroll-scrolling .c-scrollbar{opacity:1}[data-scroll-direction=horizontal] .c-scrollbar{bottom:0;height:10px;top:auto;transform:scaleY(1);width:100%}[data-scroll-direction=horizontal] .c-scrollbar:hover{transform:scaleY(1.3)}.c-scrollbar_thumb{background-color:#000;border-radius:10px;cursor:-webkit-grab;cursor:grab;margin:2px;opacity:.5;position:absolute;right:0;top:0;width:7px}.has-scroll-dragging .c-scrollbar_thumb{cursor:-webkit-grabbing;cursor:grabbing}[data-scroll-direction=horizontal] .c-scrollbar_thumb{bottom:0;right:auto}
-    </style>
-
-    <script type="module" defer>
-        const locomotiveScroll = new LocomotiveScroll();
-    </script>
+    <link rel="shortcut icon" href="assets/logobl.png" type="image/x-icon" />
 
     <title>biitle.nl</title>
 </head>
-<body class="scroll-smooth flex flex-col justify-center items-center">
-    <span class="my-4 bottom-0 fixed bg-white text-black px-4 py-1 opacity-0 w-0 collapse text-center overflow-hidden text-sm rounded-full transition-all h-[3cap]" id="hint"></span>
+<body class="scroll-smooth flex flex-col justify-center items-center px-2">
     <nav class="py-8 md:py-2 px-8 flex flex-col max-md:w-full md:flex-row items-start md:items-center md:gap-2 mb-0 md:mb-4">
-        <a class="hover:bg-white hover:text-black px-2 rounded-full transition-colors flex flex-row justify-center items-center gap-2" href="#">
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors flex flex-row justify-center items-center gap-2" href="#">
             <img src="assets/logobl.png" class="h-3">
             biitle.nl
         </a>
-        <a class="hover:bg-white hover:text-black px-2 rounded-full transition-colors" href="#">Home</a>
-        <a class="hover:bg-white hover:text-black px-2 rounded-full transition-colors" href="#projects">Projects</a>
-        <a class="hover:bg-white hover:text-black px-2 rounded-full transition-colors" href="#about">About</a>
-        <a class="hover:bg-white hover:text-black px-2 rounded-full transition-colors" href="#etc">Etc</a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="#">Home</a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="#projects">Projects</a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="#about">About</a>
+        <a class="hover:bg-black hover:text-white px-2 rounded-full transition-colors" href="https://blog.biitle.nl">Blog</a>
     </nav>
-    <section class="w-3/4 grid grid-cols-4">
-        <div class="col-span-4 lg:col-span-3">
-            <h1 class="text-3xl md:text-6xl w-full">We are <span class="bg-clip-text bg-gradient-to-br from-purple-500 to-fuchsia-400 text-transparent">biitle.nl</span>, <br> and we develop software.
-            <p class="text-2xl w-full mt-4">
-                At biitle.nl, we develop great software - such as FluidServer, ppddvv, and Libracino.
-            </p>
-            <div class="h-full px-2 py-2 md:px-2 md:py-4 flex flex-row justify-center gap-5 items-center">
-                <img src="assets/emojis/fluidserver.png" class="w-1/3 sm:w-3/12 md:w-1/12">
-                <img src="assets/emojis/libracino.png" class="w-1/3 sm:w-3/12 md:w-1/12">
-                <img src="assets/emojis/netdeck.png" class="w-1/3 sm:w-3/12 md:w-1/12">
-                <img src="assets/emojis/notboard.png" class="w-1/3 sm:w-3/12 md:w-1/12">
-                <img src="assets/emojis/ppddvv.png" class="w-1/3 sm:w-3/12 md:w-1/12">
+    <main class="2xl:w-5xl gap-4 flex flex-col">
+        <h1 class="text-2xl md:text-4xl xl:text-6xl">Hey, we're <span class="bg-amber-400">biitle.nl</span> and we make some cool stuff.</h1>
+        <section id="projects">
+            <h2 class="text-4xl mb-4">Projects</h2>
+            <div class="grid md:grid-cols-3 gap-2">
+                <a class="project gap-1 py-3 pr-3" href="https://example.com">
+                    <img src="/assets/emojis/backpack.png" class="h-full">
+                    <h1 class="text-4xl">Backpack</h1>
+                </a>
+                <a class="project gap-3 py-4 pr-3" href="https://outclock.xyz">
+                    <img src="/assets/emojis/outclock.png" class="h-full">
+                    <h1 class="text-4xl">Outclock</h1>
+                </a>
+                <a class="project bg-gradient-to-b from-blue-300 to-blue-400 text-white gap-1 py-4 pr-3" href="https://fluidserver.biitle.nl">
+                    <img src="/assets/emojis/fluidserver.png" class="h-full">
+                    <h1 class="text-4xl">FluidServer</h1>
+                </a>
+                <!-- <a class="bg-gray-200/50 w-full h-20 rounded-md overflow-hidden bg-no-repeat p-1 flex justify-center items-center select-none">
+                    <p class="text-gray-500 !decoration-0">No project here.. yet!</p>
+                </a> -->
             </div>
-        </div> 
-        <div class="hidden lg:block cursor-all-scroll">
-            <div class="aspect-square w-full bg-gray-400 rounded-4xl text-black p-20" id="icon">
-                <div class="aspect-square w-full h-full opacity-100 flex justify-center items-center transition-all duration-100" data-bg="#9ca3af" data-name="ppddvv (POS System)">
-                    <img src="assets/emojis/ppddvv.png" class="w-full h-full">
-                </div>
-
-                <div class="aspect-square w-full h-full opacity-0 justify-center items-center -mt-full transition-opacity duration-100" data-bg="#facc15" data-name="ppddvv Bullet (Card Scanner)">
-                    <img src="assets/emojis/bullet.png" class="w-full h-full">
-                </div>
-                
-                <div class="aspect-square w-full h-full opacity-0 justify-center items-center -mt-full transition-opacity duration-100" data-bg="#60a5fa" data-name="FluidServer (POS Server)">
-                    <img src="assets/emojis/fluidserver.png" class="w-full h-full">
-                </div>
-
-                <div class="aspect-square w-full h-full opacity-0 justify-center items-center -mt-full transition-opacity duration-100" data-bg="#2563eb" data-name="Libracino (Library System)">
-                    <img src="assets/emojis/libracino.png" class="w-full h-full">
-                </div>
-
-                <div class="aspect-square w-full h-full opacity-0 justify-center items-center -mt-full transition-opacity duration-100" data-bg="#2563eb" data-name="Netdeck (OpenAPI Visualizer)">
-                    <img src="assets/emojis/netdeck.png" class="w-full h-full">
-                </div>
-
-                <div class="aspect-square w-full h-full opacity-0 justify-center items-center -mt-full transition-opacity duration-100" data-bg="#ffe4e6" data-name="Notboard (School System)">
-                    <img src="assets/emojis/notboard.png" class="w-full h-full">
-                </div>
+        </section>
+        <section id="about">
+            <h2 class="text-4xl mb-4">About</h2>
+            <p class="text-lg">biitle.nl is an organization that develops software, libraries and other things. Our goal is to make people's computer lives easier by making software that is intuitive and easy to use.</p>
+        </section>
+    </main>
+    <footer class="2xl:w-4xl mt-16 grid grid-cols-4 gap-2">
+        <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+                <img src="/assets/logobl.png" class="w-4">
+                <h1>biitle.nl</h1>
             </div>
-            <p class="text-center mt-4 text-xl" id="description">ppddvv (POS System)</p>
-        </div>
-    </section>
-    <section class="mt-2 w-3/4" id="projects">
-        <h1 class="text-2xl"><span class="bg-clip-text bg-gradient-to-br from-purple-500 to-fuchsia-400 text-transparent">biitle.nl</span> Projects</h1>
-        <br>
-        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
-            <figure class="w-full bg-blue-500 p-4 rounded-2xl flex flex-col">
-                <img src="assets/emojis/fluidserver.png" class="justify-self-center bg-blue-400 rounded-xl py-4 object-contain h-2/3">
-                <h1 class="text-3xl font-bold mt-2">FluidServer</h1>
-                <p>FluidServer is an open-source POS server.</p>
 
-                <div class="flex flex-col mt-4 gap-2 select-none">
-                    <a href="https://fluidserver.biitle.nl" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Site</a>
-                    <a href="https://docs.fluidserver.biitle.nl" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Documentation</a>
-                    <a href="https://github.com/FluidServer" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">GitHub</a>
-                </div>
-            </figure>
-
-            <figure class="w-full bg-blue-700 p-4 rounded-2xl flex flex-col">
-                <img src="assets/emojis/libracino.png" class="justify-self-center bg-blue-600 rounded-xl py-4 object-contain h-2/3">
-                <h1 class="text-3xl font-bold mt-2">Libracino</h1>
-                <p>Libracino is an open-source library system.</p>
-
-                <div class="flex flex-col mt-4 gap-2 select-none">
-                    <a href="https://docs.libracino.biitle.nl" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Documentation</a>
-                    <a href="https://libracino.biitle.nl" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Site</a>
-                    <a href="https://github.com/Libracino" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">GitHub</a>
-                </div>
-            </figure>
-
-            <figure class="w-full bg-rose-600 p-4 rounded-2xl flex flex-col">
-                <img src="assets/emojis/netdeck.png" class="justify-self-center bg-rose-400 rounded-xl py-4 object-contain h-2/3">
-                <h1 class="text-3xl font-bold mt-2">Netdeck</h1>
-                <p>Netdeck visualizes OpenAPI specifications.</p>
-
-                <div class="flex flex-col mt-4 gap-2 select-none">
-                    <a href="https://basement.biitle.nl/netdeck" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Site</a>
-                    <a href="https://basement.biitle.nl/netdeck/docs" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Documentation</a>
-                    <a href="https://github.com/getnetdeck" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">GitHub</a>
-                </div>
-            </figure>
-
-            <figure class="w-full bg-rose-400 p-4 rounded-2xl flex flex-col">
-                <img src="assets/emojis/notboard.png" class="justify-self-center bg-rose-300 rounded-xl py-4 object-contain h-3/4">
-                <h1 class="text-3xl font-bold mt-2">Notboard</h1>
-                <p>Notboard is a school management system.</p>
-
-                <div class="flex flex-col mt-4 gap-2 select-none">
-                    <a href="https://notboard.biitle.nl" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Site</a>
-                    <a href="https://basement.biitle.nl/notboard/" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">Documentation</a>
-                    <a href="https://github.com/Notboard" class="text-center p-2 bg-blue-300/40 hover:bg-blue-300/50 transition-colors rounded-xl text-xl">GitHub</a>
-                </div>
-            </figure>
-        </div>
-    </section>
-
-    <section class="w-3/4 mt-8 text-2xl" id="about">
-        <h1 class="text-2xl">About <span class="bg-clip-text bg-gradient-to-br from-purple-500 to-fuchsia-400 text-transparent">biitle.nl</span></h1>
-        <br>
-        biitle.nl was created for a product that was going to be called the "biitle", a touch-screen clock with extra functionality, however, that never became a real product.
-        <br><br>
-        Now, biitle.nl creates open-source software and also develops ppddvv, a paid POS-system that works with the open-source FluidServer POS server.
-        <br><br>
-        We believe in right to repair and if we ever try to make a physical product, we will release schematics and repair guides.
-        <br><br>
-        This domain was registered in the 29th of March, 2023, after a few weeks of thinking about the idea. The name biitle.nl is a combination of beetle and bit. .nl and .de were the cheapest TLDs, however, .nl fit better, so we used that instead of .de.
-    </section>
-
-    <section class="w-3/4 mt-8 text-2xl" id="etc">
-        <h1 class="text-2xl">Etc and other things about <span class="bg-clip-text bg-gradient-to-br from-purple-500 to-fuchsia-400 text-transparent">biitle.nl</span></h1>
-        <br>
-        <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://clue.biitle.nl/blog">Clue's Blog</a>
-        <br>
-        <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://clue.biitle.nl/portfolio">Clue's Portfolio</a>
-        <br>
-        <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://clue.biitle.nl/">Clue's Homepage</a>
-    </section>
-
-    <span class="mx-4 uppercase text-sm text-center font-stretch-125% mt-8 text-gray-200">Emojis used are not actual product logos with the exception of FluidServer.</span>
-    <footer class="grid sm:grid-cols-2 md:grid-cols-4 mt-24 p-8 w-full gap-4">
-        <div class="gap-4">
-            <img src="assets/logobl.png" class="w-16 h-16">
-            <br class="leading-0.5">
-            <p class="text-gray-200 text-3xl">biitle.nl</p>
-            <p class="text-gray-200 text-xl">Built with love by Clue</p>
-        </div>
-        <div class="gap-4">
-            <p>Projects</p>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://fluidserver.biitle.nl/">FluidServer</a>
-            <br>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://libracino.biitle.nl/">Libracino</a>
-            <br>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://basement.biitle.nl/netdeck">Netdeck</a>
-            <br>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://notboard.biitle.nl/">Notboard</a>
-        </div>
-        <div class="gap-4">
-            <p>Other</p>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://pos.biitle.nl/">ppddvv</a>
-            <br>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://pos.biitle.nl/bullet">ppddvv Bullet</a>
-        </div>
-        <div class="gap-4">
             <p>© 2025 biitle.nl</p>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="https://github.com/fgclue">Clue</a>
-            <br>
-            <a class="text-blue-400 underline decoration-blue-400 hover:decoration-blue-500 transition-colors" href="/.well-known/security.txt">security.txt</a>
+        </div>
+        <div class="flex flex-col">
+            <h1>Projects</h1>
+            <a href="https://example.com" class="styled">Backpack</a>
+            <a href="https://outclock.xyz" class="styled">Outclock</a>
+            <a href="https://fluidserver.biitle.nl" class="styled">FluidServer</a>
+            <a href="https://search.biitle.nl" class="styled">biitle.nl Search</a>
+        </div>
+        <div class="flex flex-col">
+            <h1>Social Media</h1>
+            <a href="mailto:contact@biitle.nl" class="styled">E-mail</a>
+            <a href="https://github.com/biitlenl" class="styled">Outclock</a>
+            <a href="https://blog.biitle.nl" class="styled">Blog</a>
+        </div>
+        <div class="flex flex-col">
+            <h1>About</h1>
+            <a href="https://github.com/biitlenl/site/blob/main/src/index.html" class="styled">Edit this page</a>
+            <a href="https://github.com/biitlenl/site/" class="styled">GitHub repo</a>
         </div>
     </footer>
-    <h1 class="text-[20vw] font-extrabold bg-gradient-to-br from-black/15 to-black/20 select-none text-center whitespace-nowrap overflow-hidden bg-clip-text text-transparent">biitle.nl</h1>
 </body>
 </html>
