@@ -1,0 +1,16 @@
+# biitle.nl
+
+User-Agent: *
+Disallow: /.well-known/
+Disallow: /assets/
+Disallow: /css/
+
+User-Agent: T-1000
+User-Agent: T-800
+Disallow: @fgclue
+
+# User-Agent: Aliens
+# Allow: *
+
+# The completely empty sitemap
+Sitemap: https://biitle.nl/sitemap.xml
