@@ -1,14 +1,10 @@
 # biitle.nl
-# FluidServer
 
 Contact: mailto:contact@biitle.nl
 Contact: https://biitle.nl
-Expires: 2030-04-01T12:30:00.000Z
-Acknowledgments: https://biitle.nl/thanks
-Preferred-Languages: en, pt, es
+Preferred-Languages: en, pt
 
 Canonical: https://biitle.nl/.well-known/security.txt
-Canonical: https://fluidserver.biitle.nl/.well-known/security.txt
-Policy: https://biitle.nl/.well-known/securitypol.txt
+Policy: https://biitle.nl/.well-known/securitypol.md
 
-# Hiring: not yet
+Hiring: not yet
