@@ -1,0 +1,19 @@
+---
+import NavItem from "./NavItem.astro";
+---
+
+<nav
+  class="py-8 md:py-2 px-8 flex flex-col max-md:w-full md:flex-row items-start md:items-center md:gap-2 mb-0 md:mb-4"
+>
+  <a
+    class="hover:bg-black hover:text-white px-2 rounded-full transition-colors flex flex-row justify-center items-center gap-2"
+    href="/"
+  >
+    <img src="/assets/logobl.png" class="h-3" alt="biitle.nl Logo" />
+    biitle.nl
+  </a>
+  <NavItem href="/" text="Home" />
+  <NavItem href="/#projects" text="Projects" />
+  <NavItem href="/#about" text="About" />
+  <NavItem href="https://blog.biitle.nl" text="Blog" />
+</nav>
