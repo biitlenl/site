@@ -1,0 +1,32 @@
+---
+import Link from "./Link.astro";
+const year = new Date().getFullYear();
+---
+
+<footer class="2xl:w-4xl mt-16 grid grid-cols-4 gap-2">
+  <div class="flex flex-col">
+    <div class="flex items-center gap-2">
+      <img src="/assets/logobl.png" class="w-4" alt="biitle.nl Logo" />
+      <h1>biitle.nl</h1>
+    </div>
+
+    <p>© {year} biitle.nl</p>
+  </div>
+  <div class="flex flex-col">
+    <h1>Projects</h1>
+    <Link href="/simpledroid">Simpledroid</Link>
+    <!-- <Link href="https://example.com">Backpack</Link> -->
+    <!-- <p class="text-neutral-700">Nothing here.. yet!</p> -->
+  </div>
+  <div class="flex flex-col">
+    <h1>Socials</h1>
+    <Link href="mailto:contact@biitle.nl">E-mail</Link>
+    <Link href="https://github.com/biitlenl">GitHub</Link>
+    <Link href="https://blog.biitle.nl">Blog</Link>
+  </div>
+  <div class="flex flex-col">
+    <h1>About</h1>
+    <Link href="https://github.com/biitlenl/site/blob/main/src/index.html">Edit this page</Link>
+    <Link href="https://github.com/biitlenl/site/">GitHub repo</Link>
+  </div>
+</footer>
