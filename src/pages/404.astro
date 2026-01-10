@@ -1,0 +1,21 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/nav/Navbar.astro";
+import Layout from "../layout/Layout.astro";
+---
+
+<style>
+  body {
+    background: #0c0c0c;
+    color: white;
+  }
+</style>
+<Layout>
+  <Navbar />
+  <main class="2xl:w-5xl gap-4 flex flex-col">
+    <a href="/">
+      <img src="/assets/404.png" alt="There's supposed to be a 404 error here. Nonetheless, click to go back home">
+    </a>
+  </main>
+  <Footer />
+</Layout>
