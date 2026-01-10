@@ -1,0 +1,8 @@
+---
+const { href, img, text, css, textColor = 'black', bg = 'white' } = Astro.props;
+---
+
+<a class={`project ${css} ${textColor} ${bg}`} href={href}>
+  <img src={img} class="h-full" alt="Logo" />
+  <h1 class="text-4xl">{text}</h1>
+</a>
