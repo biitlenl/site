@@ -1,7 +1,7 @@
 
 # biitle.nl
 
-This is the webpage for biitle.nl.
+This is the webpage for biitle.nl, built with Astro.js.
 
 ## Contributing
 
