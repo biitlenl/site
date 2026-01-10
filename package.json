@@ -4,13 +4,14 @@
   "description": "The biitle.nl site",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fgclue/biitle.nl.git"
+    "url": "git+https://github.com/biitlenl/biitle.nl.git"
   },
   "keywords": [
     "biitle",
@@ -19,13 +20,15 @@
   "author": "fgclue",
   "license": "MIT",
   "type": "module",
+  "private": "true",
   "bugs": {
     "url": "https://github.com/fgclue/biitle.nl/issues"
   },
   "homepage": "https://github.com/fgclue/biitle.nl#readme",
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.8",
-    "tailwindcss": "^4.1.8",
-    "vite": "^6.3.5"
+    "@astrojs/sitemap": "^3.6.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.8",
+    "tailwindcss": "^4.1.18"
   }
 }
