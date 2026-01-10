@@ -1,0 +1,37 @@
+---
+import Project from "../../components/card/Project.astro";
+import Footer from "../../components/Footer.astro";
+import Navbar from "../../components/nav/Navbar.astro";
+import Layout from "../../layout/Layout.astro";
+---
+
+<Layout title="Simpledroid" metaTitle="Simpledroid" description="Simple apps that get the job done" url="https://biitle.nl/simpledroid">
+  <Navbar />
+  <main class="2xl:w-5xl gap-4 flex flex-col">
+    <img src="/assets/logos/simpledroid.svg" alt="Simpledroid Logo" class="w-24 self-center bg-purple-500 p-2 rounded-xl">
+    <h1 class="text-2xl md:text-4xl xl:text-6xl text-center">
+      Simpledroid
+    </h1>
+    <h2 class="text-2xl mb-4 text-center">Simple apps that get the job done</h2>
+    <section id="projects">
+      <h2 class="text-4xl mb-4">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-2">
+        <Project
+          href="/simpledroid/caffeine"
+          img="/assets/logos/caffeine.svg"
+          text="Caffeine"
+          css="gap-1 py-3 !bg-[#281D1D]"
+          textColor="text-white"
+        />
+        <Project
+          href="/simpledroid/podnative"
+          img="/assets/logos/podnative.svg"
+          text="Podnative"
+          css="gap-1 py-3 !bg-[#0E6BA8]"
+          textColor="text-white"
+        />
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
