@@ -14,4 +14,4 @@ Disallow: /@fgclue
 
 # ~~The completely empty sitemap~~
 # The sitemap
-Sitemap: https://biitle.nl/sitemap.xml
+Sitemap: https://biitle.nl/sitemap-index.xml
