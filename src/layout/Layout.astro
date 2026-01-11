@@ -2,6 +2,8 @@
 import Meta from "../components/Meta.astro";
 import "../main.css";
 
+import BiitleLogo from "../assets/logobl.png"
+
 const {
   title = "biitle.nl - Really good software",
   description = "biitle.nl. Productivity software and more. By aliens for humans.",
@@ -19,7 +21,7 @@ const {
     <Meta title={title} description={description} metaTitle={metaTitle} url={url} />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="shortcut icon" href="/assets/logobl.png" type="image/x-icon" />
+    <link rel="shortcut icon" href={BiitleLogo.src} type="image/x-icon" />
   </head>
   <body class="scroll-smooth flex flex-col justify-center items-center px-2">
     <slot />
