@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import Footer from "../../components/Footer.astro";
 import Navbar from "../../components/nav/Navbar.astro";
 import GithubTag from "../../components/tags/GithubTag.astro";
@@ -10,19 +11,20 @@ import Layout from "../../layout/Layout.astro";
 <Layout title="Podnative · biitle.nl" metaTitle="Podnative" description="Podcasts. On your wrist." url="https://biitle.nl/simpledroid/podnative">
   <Navbar />
   <main class="2xl:w-5xl gap-4 flex flex-col items-center">
-    <img src="/assets/logos/podnative.svg" alt="Podnative Logo" class="w-24 self-center bg-[#0E6BA8] p-2 rounded-full">
+    <Image src="/assets/logos/podnative.svg" alt="Podnative Logo" class="w-24 self-center bg-[#0E6BA8] p-2 rounded-full" width=96 height=96 loading="eager" />
     <h1 class="text-2xl md:text-4xl xl:text-6xl text-center">
       Podnative
     </h1>
     <h2 class="text-2xl  text-center">Podcasts. On your wrist.</h2>
+
     <Tagbar>
       <WorkInProgress />
       <GithubTag repo="simpledroid/podnative" />
     </Tagbar>
-    <img src="/apps/podnative/list.png" width=384 height=384 class="w-96" alt="Screenshot">
+    <Image src="/apps/podnative/list.png" width=384 height=384 class="w-96" alt="Screenshot" loading="eager" />
     
     <!-- <a href="https://play.google.com/store/apps/details?id=nl.biitle.podnative">
-      <img src="/assets/badges/gplay.svg" alt="Get it on Google Play" class="h-16">
+      <Image src="/assets/badges/gplay.svg" alt="Get it on Google Play" width=300 height=89 class="h-16" loading="eager" />
     </a> -->
   </main>
   <Footer />

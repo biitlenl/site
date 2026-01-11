@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import Project from "../../components/card/Project.astro";
 import Footer from "../../components/Footer.astro";
 import Navbar from "../../components/nav/Navbar.astro";
@@ -8,7 +9,7 @@ import Layout from "../../layout/Layout.astro";
 <Layout title="Simpledroid" metaTitle="Simpledroid" description="Simple apps that get the job done" url="https://biitle.nl/simpledroid">
   <Navbar />
   <main class="2xl:w-5xl gap-4 flex flex-col">
-    <img src="/assets/logos/simpledroid.svg" alt="Simpledroid Logo" class="w-24 self-center bg-purple-500 p-2 rounded-xl">
+    <Image src="/assets/logos/simpledroid.svg" alt="Simpledroid Logo" class="w-24 self-center bg-purple-500 p-2 rounded-xl" width=96 height=96 loading="eager" />
     <h1 class="text-2xl md:text-4xl xl:text-6xl text-center">
       Simpledroid
     </h1>

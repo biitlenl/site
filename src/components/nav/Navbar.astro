@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import NavItem from "./NavItem.astro";
 ---
 
@@ -9,7 +10,7 @@ import NavItem from "./NavItem.astro";
     class="hover:bg-black hover:text-white px-2 rounded-full transition-colors flex flex-row justify-center items-center gap-2"
     href="/"
   >
-    <img src="/assets/logobl.png" class="h-3" alt="biitle.nl Logo" />
+    <Image src="/assets/logobl.png" class="h-3" alt="biitle.nl Logo" width=12 height=12 loading="eager" />
     biitle.nl
   </a>
   <NavItem href="/" text="Home" />
