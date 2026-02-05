@@ -1,12 +1,9 @@
 ---
 import Image from "astro/components/Image.astro";
-import Project from "../../components/card/Project.astro";
 import Footer from "../../components/Footer.astro";
 import Navbar from "../../components/nav/Navbar.astro";
 import Layout from "../../layout/Layout.astro";
 
-import PodnativeLogo from "../../assets/logos/podnative.svg"
-import CaffeineLogo from "../../assets/logos/caffeine.svg"
 import SimpledroidLogo from "../../assets/logos/simpledroid.svg"
 ---
 
@@ -20,21 +17,8 @@ import SimpledroidLogo from "../../assets/logos/simpledroid.svg"
     <h2 class="text-2xl mb-4 text-center">Simple apps that get the job done</h2>
     <section id="projects">
       <h2 class="text-4xl mb-4">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-2">
-        <Project
-          href="/simpledroid/caffeine"
-          img={CaffeineLogo}
-          text="Caffeine"
-          css="gap-1 py-3 !bg-[#281D1D]"
-          textColor="text-white"
-        />
-        <Project
-          href="/simpledroid/podnative"
-          img={PodnativeLogo}
-          text="Podnative"
-          css="gap-1 py-3 !bg-[#0E6BA8]"
-          textColor="text-white"
-        />
+      <div class="grid md:grid-cols-1 gap-2">
+        <p class="text-center project from-[#140325] to-purple-950 xl:text-2xl md:py-20 bg-linear-to-b text-white">There are no projects here, yet.</p>
       </div>
     </section>
   </main>
