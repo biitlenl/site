@@ -9,6 +9,7 @@ const {
   description = "biitle.nl. Productivity software and more. By aliens for humans.",
   metaTitle = "biitle.nl - Really good software",
   url = "https://biitle.nl",
+  noindex = false,
   css
 } = Astro.props;
 ---
@@ -20,6 +21,7 @@ const {
     <title>{title}</title>
     <Meta title={title} description={description} metaTitle={metaTitle} url={url} />
 
+    {noindex && <meta name="robots" content="noindex">}
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="shortcut icon" href={BiitleLogo.src} type="image/x-icon" />
   </head>
