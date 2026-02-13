@@ -2,7 +2,7 @@
 import Meta from "../components/Meta.astro";
 import "../main.css";
 
-import BiitleLogo from "../assets/logobl.png"
+import BiitleLogo from "../assets/logo.svg"
 
 const {
   title = "biitle.nl - Really good software",
@@ -23,7 +23,7 @@ const {
 
     {noindex && <meta name="robots" content="noindex">}
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="shortcut icon" href={BiitleLogo.src} type="image/x-icon" />
+    <link rel="shortcut icon" href={BiitleLogo.src} type="image/svg" />
   </head>
   <body class="scroll-smooth flex flex-col justify-center items-center px-2">
     <slot />
