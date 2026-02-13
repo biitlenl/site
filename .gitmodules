@@ -1,0 +1,3 @@
+[submodule "src/assets/branding"]
+	path = src/assets/branding
+	url = https://github.com/biitlenl/branding
