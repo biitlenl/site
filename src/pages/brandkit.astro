@@ -1,0 +1,37 @@
+---
+import Image from "astro/components/Image.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/nav/Navbar.astro";
+import Layout from "../layout/Layout.astro";
+
+import BiitleLogo from '../assets/logo.svg'
+import Link from "../components/Link.astro";
+---
+
+<Layout>
+  <Navbar />
+  <main class="2xl:w-4xl xl:w-3xl md:w-2xl sm:w-xl gap-4 flex flex-col print:pt-20">
+    <h1 class="text-xl md:text-3xl xl:text-5xl text-center flex items-center gap-4">
+      <Image src={BiitleLogo} alt="biitle.nl Logo" class="h-12 w-12" />
+      biitle.nl Brand Kit
+    </h1>
+
+    <p>
+      The following download link contains a zip with all our logos.
+      <br>
+      Before you use them please read the <Link href="http://localhost:4321/files/brand_guidelines.pdf">Brand Guidelines</a>.
+    </p>
+
+    <p>
+      We recommend you maintain WCAG AAA tests passed when using these logos, to maintain accessibility.<br>
+      Please do not modify the logos.
+    </p>
+    
+    <section class="print:hidden">
+      <a href="https://github.com/biitlenl/branding/raw/refs/heads/trunk/output/biitle.nl%20Brand%20Kit.zip">
+        <button class="bg-red-500 px-12 py-4 rounded-lg text-white text-2xl bg-linear-to-b from-red-500 to-red-700 cursor-pointer">Download</button>
+      </a>
+    </section>
+  </main>
+  <Footer />
+</Layout>
