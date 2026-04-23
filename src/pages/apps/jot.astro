@@ -8,6 +8,7 @@ import Layout from "../../layout/Layout.astro";
 
 import JotLogo from "../../assets/logos/jot.svg";
 import GPlayBadge from "../../assets/badges/gplay.svg";
+import WorkInProgress from "../../components/tags/WorkInProgress.astro";
 ---
 
 <Font cssVariable="--font-roboto" preload />
@@ -46,6 +47,8 @@ import GPlayBadge from "../../assets/badges/gplay.svg";
       />
       Imagine an app where you all you can do is write. You're fully focused on writing.
 
+      <span class="text-sm"><WorkInProgress /></span>
+
       <span class="mb-8">
 
       <div
@@ -63,9 +66,9 @@ import GPlayBadge from "../../assets/badges/gplay.svg";
 
       <span class="h-12" />
 
-      <a href="https://play.google.com/store/apps/details?id=nl.biitle.jot">
+      <!-- <a href="https://play.google.com/store/apps/details?id=nl.biitle.jot">
         <Image src={GPlayBadge} alt="Get it on Google Play" width=300 height=89 class="h-16" loading="eager" />
-      </a>
+      </a> -->
     </p>
   </main>
   <Footer />
