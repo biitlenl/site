@@ -7,6 +7,7 @@ import Layout from "../layout/Layout.astro";
 import PodnativeLogo from "../assets/logos/podnative.svg"
 import AutomarkLogo from "../assets/logos/automark.svg"
 import SimpledroidLogo from "../assets/logos/simpledroid.svg"
+import JotLogo from "../assets/logos/jot.svg"
 ---
 
 <Layout>
@@ -18,7 +19,7 @@ import SimpledroidLogo from "../assets/logos/simpledroid.svg"
     </h1>
     <section id="projects">
       <h2 class="text-4xl mb-4">Projects</h2>
-      <div class="grid lg:grid-cols-3 gap-2">
+      <div class="grid lg:grid-cols-2 gap-2">
         <Project
           href="/simpledroid"
           img={SimpledroidLogo}
@@ -40,6 +41,13 @@ import SimpledroidLogo from "../assets/logos/simpledroid.svg"
           text="Automark"
           css="gap-1 py-3 !bg-[#BA1B1D]"
           textColor="text-white"
+        />
+        <Project
+          href="/apps/jot"
+          img={JotLogo}
+          text="Jot"
+          css="gap-1 py-3 !bg-white"
+          textColor="text-black"
         />
       </div>
     </section>
