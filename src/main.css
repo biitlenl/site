@@ -3,7 +3,8 @@
 body {
     background-color: #f8f8f2;
     color: black;
-    font-family: 'Inter', 'SF Pro Text', 'Segoe UI', sans-serif;
+    /* Anything but Segoe UI */
+    font-family: 'SF Pro Text', 'Inter', 'Roboto', 'Helvetica', 'Arial', 'Open Sans', 'Segoe UI', sans-serif;
 }
 
 .-mt-full {
@@ -11,7 +12,7 @@ body {
 }
 
 *::selection {
-	@apply bg-amber-400;
+	@apply bg-yellow-400/80;
 }
 
 img {

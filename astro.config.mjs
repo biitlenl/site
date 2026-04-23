@@ -5,6 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+<<<<<<< HEAD
   experimental: {
     fonts: [
       {
@@ -24,4 +25,16 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [sitemap()],
+=======
+    fonts: [{
+        provider: fontProviders.google(),
+        name: 'Slabo 27px',
+        cssVariable: '--font-slabo'
+    }],
+    site: 'https://biitle.nl',
+    vite: {
+        plugins: [tailwindcss()],
+    },
+    integrations: [sitemap()]
+>>>>>>> trunk
 });

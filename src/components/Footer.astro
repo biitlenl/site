@@ -1,12 +1,12 @@
 ---
 import Image from "astro/components/Image.astro";
 import Link from "./Link.astro";
-import BiitleLogo from "../assets/logobl.png"
+import BiitleLogo from "../assets/logo.svg"
 
 const year = new Date().getFullYear();
 ---
 
-<footer class="2xl:w-4xl mt-16 grid grid-cols-4 gap-2">
+<footer class="2xl:w-4xl md:w-2xl sm:w-xl mt-16 grid sm:grid-cols-4 grid-cols-2 gap-8 print:hidden">
   <div class="flex flex-col">
     <div class="flex items-center gap-2">
       <Image src={BiitleLogo} class="w-4 h-4" alt="biitle.nl Logo" width=24 height=24 loading="eager" />
@@ -16,9 +16,13 @@ const year = new Date().getFullYear();
     <p>© {year} biitle.nl</p>
   </div>
   <div class="flex flex-col">
-    <h1>Projects</h1>
+    <h1>Resources</h1>
     <Link href="/simpledroid">Simpledroid</Link>
+<<<<<<< HEAD
     <Link href="/apps/jot">Jot</Link>
+=======
+    <Link href="/brandkit">Brand Kit</Link>
+>>>>>>> trunk
     <!-- <Link href="https://example.com">Backpack</Link> -->
     <!-- <p class="text-neutral-700">Nothing here.. yet!</p> -->
   </div>
