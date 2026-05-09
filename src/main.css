@@ -7,10 +7,6 @@ body {
     font-family: 'SF Pro Text', 'Inter', 'Roboto', 'Helvetica', 'Arial', 'Open Sans', 'Segoe UI', sans-serif;
 }
 
-.-mt-full {
-    margin-top: -100%;
-}
-
 *::selection {
 	@apply bg-yellow-400/80;
 }
