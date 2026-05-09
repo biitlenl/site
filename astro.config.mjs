@@ -18,9 +18,9 @@ export default defineConfig({
     },
   ],
   redirects: {
-    '/brandkit': {
+    '/presskit': {
       status: 301,
-      destination: '/presskit'
+      destination: '/brandkit'
     }
   },
   site: "https://biitle.nl",
