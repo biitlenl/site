@@ -17,6 +17,12 @@ export default defineConfig({
       cssVariable: "--font-roboto",
     },
   ],
+  redirects: {
+    '/brandkit': {
+      status: 301,
+      destination: '/presskit'
+    }
+  },
   site: "https://biitle.nl",
   vite: {
     plugins: [tailwindcss()],

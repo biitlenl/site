@@ -10,7 +10,7 @@ import Link from "../components/Link.astro";
 
 <Layout>
   <Navbar />
-  <main class="2xl:w-4xl xl:w-3xl md:w-2xl sm:w-xl gap-4 flex flex-col print:pt-20">
+  <main class="2xl:w-4xl xl:w-3xl md:w-2xl sm:w-xl gap-4 flex flex-col">
     <h1 class="text-xl md:text-3xl xl:text-5xl text-center flex items-center gap-4">
       <Image src={BiitleLogo} alt="biitle.nl Logo" class="h-12 w-12" />
       biitle.nl Brand Kit
@@ -19,7 +19,7 @@ import Link from "../components/Link.astro";
     <p>
       The following download link contains a zip with all our logos.
       <br>
-      Before you use them please read the <Link href="/files/brand_guidelines.pdf">Brand Guidelines</a>.
+      Before you use them please read the <Link href="/files/brand_guidelines.pdf">Brand Guidelines</Link>. These are recommendations, of course, but please follow them anyways.
     </p>
 
     <p>
@@ -27,7 +27,7 @@ import Link from "../components/Link.astro";
       Please do not modify the logos.
     </p>
     
-    <section class="print:hidden">
+    <section>
       <a href="https://github.com/biitlenl/branding/raw/refs/heads/trunk/output/biitle.nl%20Brand%20Kit.zip">
         <button class="bg-red-500 px-12 py-4 rounded-lg text-white text-2xl bg-linear-to-b from-red-500 to-red-700 cursor-pointer">Download</button>
       </a>
