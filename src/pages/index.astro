@@ -5,9 +5,9 @@ import Navbar from "../components/nav/Navbar.astro";
 import Layout from "../layout/Layout.astro";
 
 import PodnativeLogo from "../assets/logos/podnative.svg"
-import AutomarkLogo from "../assets/logos/automark.svg"
-import SimpledroidLogo from "../assets/logos/simpledroid.svg"
-import JotLogo from "../assets/logos/jot.svg"
+import HexadecimalLogo from "../assets/logos/hexadecimal.svg"
+import HexadecimalBackground from "../assets/backgrounds/hexadecimal.svg"
+import LightswitchLogo from "../assets/logos/lightswitch.svg"
 ---
 
 <Layout>
@@ -19,35 +19,29 @@ import JotLogo from "../assets/logos/jot.svg"
     </h1>
     <section id="projects">
       <h2 class="text-4xl mb-4">Projects</h2>
-      <div class="grid lg:grid-cols-2 gap-2">
+      <div class="grid lg:grid-cols-3 gap-2">
         <Project
-          href="/simpledroid"
-          img={SimpledroidLogo}
-          text="Simpledroid"
-          css="gap-1 py-3 pr-3"
-          bg="!bg-purple-500"
-          textColor="text-white"
+          href="/apps/lightswitch"
+          img={LightswitchLogo}
+          text="Lightswitch"
+          css="gap-2 py-3 pr-3"
+          bg="[#dc70df]"
+          textColor="white"
         />
         <Project
           href="/apps/podnative"
           img={PodnativeLogo}
           text="Podnative"
           css="gap-1 py-3 !bg-[#0E6BA8]"
-          textColor="text-white"
+          textColor="white"
         />
         <Project
-          href="/extensions/automark"
-          img={AutomarkLogo}
-          text="Automark"
-          css="gap-1 py-3 !bg-[#BA1B1D]"
-          textColor="text-white"
-        />
-        <Project
-          href="/apps/jot"
-          img={JotLogo}
-          text="Jot"
-          css="gap-1 py-3 !bg-white"
-          textColor="text-black"
+          href="/apps/hx"
+          img={HexadecimalLogo}
+          text="Hexadecimal"
+          css={`gap-4 text-white py-3 bg-linear-to-b from-neutral-925 bg-cover to-neutral-950`}
+          style={{ backgroundImage: `url(${HexadecimalBackground.src})` }}
+          textColor="black"
         />
       </div>
     </section>

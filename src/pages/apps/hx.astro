@@ -1,0 +1,69 @@
+---
+import { Font } from "astro:assets";
+
+import Image from "astro/components/Image.astro";
+import Footer from "../../components/Footer.astro";
+import Navbar from "../../components/nav/Navbar.astro";
+import Layout from "../../layout/Layout.astro";
+
+import HxLogo from "../../assets/logos/hexadecimal-app.svg";
+import HxPreview from "../../assets/apps/hexadecimal.png";
+import GPlayBadge from "../../assets/badges/gplay.svg";
+import WorkInProgress from "../../components/tags/WorkInProgress.astro";
+---
+
+<Font cssVariable="--font-roboto" preload />
+
+<style>
+  :global(body) {
+    background-color: #0d0d0d;
+    color: white;
+  }
+
+  main {
+    font-family: var(--font-roboto);
+  }
+
+  *::selection {
+    background-color: oklch(95.1% 0.026 236.824);
+  }
+
+  :global(*::selection) {
+    background-color: #ff8f0f !important;
+  }
+</style>
+
+<Layout
+  title="Hexadecimal · biitle.nl"
+  metaTitle="Hexadecimal"
+  description="Simple Hacker News client"
+  url="https://biitle.nl/apps/hx"
+>
+  <Navbar />
+  <main class="2xl:w-5xl gap-4 flex flex-col items-center">
+    <p class="text-left text-5xl flex flex-col leading-normal">
+      <Image
+        src={HxLogo}
+        alt="Hexadecimal Logo"
+        class="w-24"
+        width="96"
+        height="96"
+        loading="eager"
+      />
+      Hexadecimal: Simple Hacker News client
+
+      <span class="mb-8">
+
+      <div class="w-full justify-center items-center">
+        <Image src={HxPreview} alt="Hexadecimal App" class="mt-16" />
+      </div>
+
+      <span class="h-12" />
+
+      <!-- <a href="https://play.google.com/store/apps/details?id=nl.biitle.y.hn">
+        <Image src={GPlayBadge} alt="Get it on Google Play" width=300 height=89 class="h-16" loading="eager" />
+      </a> -->
+    </p>
+  </main>
+  <Footer />
+</Layout>
